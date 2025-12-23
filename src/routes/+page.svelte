@@ -11,6 +11,9 @@
 
 
 
+export let data;
+
+const {url} = data
 
 
 
@@ -27,6 +30,7 @@ let player;
 
  
 onMount(async () => {
+  console.log("url", url)
     if (!browser) return;
 
     learnmore = document.getElementById('learnmore');
@@ -292,7 +296,9 @@ bind:this={videoEl}
   autoplay 
   muted 
   preload="auto"
-  loading="lazy">
+  class="shadow-xl"
+>
+
   <source src="https://nyc.cloud.appwrite.io/v1/storage/buckets/694ae94e001383811353/files/694af23300020555b2c8/view?project=694ae93a003d9d879a41" type="application/x-mpegURL" />
 </video>
     </div>
@@ -348,11 +354,11 @@ bind:this={videoEl}
   }}>
 {#if isInView}
 <section
-  class="relative w-full min-h-screen overflow-hidden"
+  class="relative w-full h-[150vh] overflow-hidden"
   in:fade={{ duration }}
 >
   <!-- IMAGE BACKGROUND -->
-  <div class="absolute inset-0 z-0 p-4">
+  <div class=" absolute inset-0  z-0 p-4">
     <div class="columns-2 sm:columns-3 md:columns-4 gap-3">
       <img src="/bishop12.jpg" class="w-full mb-3 block" alt="image1" />
       <img src="/bishop2.jpg" class="w-full mb-3 block" alt="image2" />
@@ -424,11 +430,140 @@ bind:this={videoEl}
 
 
   <!-- Add more centered sections below if you want -->
+
+
+
+  
 </div>
 </div>
 
 
 
+
+
+
+<footer
+	class="relative bg-linear-to-tr from-slate-950/90 via-slate-900/60 to-gray-900/80 text-white px-6 md:px-12 py-16"
+>
+	<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+		<div class="space-y-4">
+			<h3 class="text-lg inline font-bold drop-shadow-md">POW Prophetic Insight & <span class="block"> Temple of Radiant Light</span> </h3>
+			<p class="text-gray-300 drop-shadow-sm">
+				430 Franklin Street<br />
+				Bloomfield, New Jersey, 07003
+			</p>
+			<p class="text-gray-300 drop-shadow-sm">
+				Email: <a href="mailto:bishop@bishopwomack.com" class="text-amber-400 hover:underline"
+					>bishop@bishopwomack.com</a
+				>
+			</p>
+			<p class="text-gray-300 drop-shadow-sm">
+				Phone: <a href="tel:+19731234567" class="text-amber-400 hover:underline"
+					>+1 (973) 873-8004</a
+				>
+			</p>
+		</div>
+
+		<div class="space-y-4 text-center md:text-left">
+			<h3 class="text-xl font-bold drop-shadow-md">Connect with Bishop Shammah Womack-El</h3>
+			<div class="flex justify-center md:justify-start gap-4 mt-2">
+				<a
+					href="https://www.facebook.com/propheticphysician"
+					class="text-amber-400 hover:text-amber-300 transition"
+					aria-label="Facebook"
+				>
+					<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+						<path
+							d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.098 2.796.142v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.764v2.313h3.59l-.467 3.622h-3.123V24h6.116c.729 0 1.326-.597 1.326-1.326V1.326C24 .597 23.403 0 22.675 0z"
+						/>
+					</svg>
+				</a>
+				<a
+					href="https://www.instagram.com/bishopwomackel/?hl=en"
+					class="text-amber-400 hover:text-amber-300 transition"
+					aria-label="Instagram"
+				>
+					<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+						<path
+							d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.056 1.97.24 2.428.414a4.918 4.918 0 011.675 1.087 4.918 4.918 0 011.087 1.675c.174.458.358 1.258.414 2.428.058 1.266.07 1.645.07 4.849s-.012 3.584-.07 4.85c-.056 1.17-.24 1.97-.414 2.428a4.918 4.918 0 01-1.087 1.675 4.918 4.918 0 01-1.675 1.087c-.458.174-1.258.358-2.428.414-1.266.058-1.645.07-4.849.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.24-2.428-.414a4.918 4.918 0 01-1.675-1.087 4.918 4.918 0 01-1.087-1.675c-.174-.458-.358-1.258-.414-2.428-.058-1.266-.07-1.645-.07-4.849s.012-3.584.07-4.85c.056-1.17.24-1.97.414-2.428a4.918 4.918 0 011.087-1.675 4.918 4.918 0 011.675-1.087c.458-.174 1.258-.358 2.428-.414 1.266-.058 1.645-.07 4.849-.07zm0-2.163C8.741 0 8.332.012 7.052.07 5.77.128 4.676.309 3.768.615a7.007 7.007 0 00-2.55 1.663 7.007 7.007 0 00-1.663 2.55C-.309 5.324-.128 6.418-.07 7.7-.012 8.981 0 9.39 0 12s-.012 3.019-.07 4.3c-.058 1.282-.239 2.376-.545 3.284a7.007 7.007 0 00-1.663 2.55 7.007 7.007 0 00-1.663 2.55c-.306.908-.487 2.002-.545 3.284C-.012 23.019 0 23.429 0 26.5c0 3.071.012 3.481.07 4.762.058 1.282.239 2.376.545 3.284a7.007 7.007 0 001.663 2.55 7.007 7.007 0 002.55 1.663c.908.306 2.002.487 3.284.545C8.332 53.988 8.741 54 12 54s3.668-.012 4.948-.07c1.282-.058 2.376-.239 3.284-.545a7.007 7.007 0 002.55-1.663 7.007 7.007 0 001.663-2.55c.306-.908.487-2.002.545-3.284.058-1.281.07-1.691.07-4.762s-.012-3.481-.07-4.762c-.058-1.282-.239-2.376-.545-3.284a7.007 7.007 0 00-1.663-2.55 7.007 7.007 0 00-2.55-1.663c-.908-.306-2.002-.487-3.284-.545C15.668.012 15.259 0 12 0z"
+						/>
+					</svg>
+				</a>
+				<a
+					href="https://x.com/home"
+					class="text-amber-400 hover:text-amber-300 transition"
+					aria-label="Twitter"
+				>
+					<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+						<path
+							d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.918 4.918 0 00-8.384 4.482A13.945 13.945 0 011.671 3.149 4.918 4.918 0 003.195 9.723a4.902 4.902 0 01-2.228-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.923 4.923 0 004.6 3.417 9.867 9.867 0 01-6.102 2.104c-.395 0-.786-.023-1.17-.068a13.945 13.945 0 007.557 2.212c9.054 0 14.004-7.496 14.004-13.986 0-.213-.005-.425-.014-.637A10.025 10.025 0 0024 4.557z"
+						/>
+					</svg>
+				</a>
+				<a
+					href="https://www.youtube.com/channel/UCxDNUqbWfJhATqfDA5zygeg/"
+					class="text-amber-400 hover:text-amber-300 transition"
+					aria-label="YouTube"
+				>
+					<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+						<path
+							d="M23.498 6.186a2.997 2.997 0 00-2.113-2.115C19.79 3.5 12 3.5 12 3.5s-7.79 0-9.385.571a2.997 2.997 0 00-2.113 2.115A31.232 31.232 0 000 12a31.232 31.232 0 00.502 5.814 2.997 2.997 0 002.113 2.115C4.21 20.5 12 20.5 12 20.5s7.79 0 9.385-.571a2.997 2.997 0 002.113-2.115A31.232 31.232 0 0024 12a31.232 31.232 0 00-.502-5.814zM9.545 15.568V8.432l6.182 3.568-6.182 3.568z"
+						/>
+					</svg>
+				</a>
+			</div>
+		</div>
+
+		<div class="space-y-4 text-center md:text-left">
+			<h3 class="text-xl font-bold drop-shadow-md">Contact & Info</h3>
+			<p class="text-gray-300 drop-shadow-sm">Office Hours: Mon–Fri, 9am–5pm</p>
+			<p class="text-gray-300 drop-shadow-sm">
+				General Inquiries: <a
+					href="mailto:bishop@bishopwomack.com"
+					class="text-amber-400 hover:underline">bishop@bishopwomack.com</a
+				>
+			</p>
+			<p class="text-gray-300 drop-shadow-sm">
+				Phone: <a href="tel:+19738738004" class="text-amber-400 hover:underline"
+					>+1 (973) 873-8004</a
+				>
+			</p>
+		</div>
+	</div>
+
+	<div class="mt-20 border-t border-white/10 pt-10 text-center">
+	<div class="mx-auto max-w-2xl space-y-4">
+		<p class="text-lg leading-relaxed text-gray-300">
+			<span class="font-semibold text-yellow-400 tracking-wide">
+    POW Prophetic Insight
+			</span>
+			is part of the
+			<a
+				href="/"
+				class="font-medium text-blue-400 hover:text-blue-300 transition-colors"
+			>
+				Temple of Radiant Light Church (TRL)
+			</a>.
+		</p>
+
+		<p class="text-base leading-relaxed text-gray-400">
+			All donations are used in contribution to
+			<a
+				href="/"
+				class="underline underline-offset-4 text-blue-400 hover:text-blue-300 transition-colors"
+			>
+				TRL Missions
+			</a>.
+			Thank you for your generous support.
+		</p>
+
+		<p class="pt-6 text-sm tracking-wide text-gray-600">
+			© 2025 POW Prophetic Insight. All rights reserved.
+		</p>
+	</div>
+</div>
+
+</footer>
 
 <style lang="scss">
   
