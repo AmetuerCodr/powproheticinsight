@@ -77,6 +77,13 @@ onMount(async () => {
     }
 
 
+  // Great subtle options:
+  // Desert: https://images.unsplash.com/photo-1506905925346-21bda4d32df4
+  // Misty mountains: https://images.unsplash.com/photo-1506318137071-a8e063b4c8ed
+  // Night sky: https://images.unsplash.com/photo-1419242902214-272b3f66ee7a
+
+
+  
   const baseUrl = import.meta.env.VITE_BASE_PUBLIC_URL; // e.g., "https://skye.top"
   const pageUrl = `${baseUrl}${$page.url.pathname}`;
   const title = "Prophetic Insight that Brings Clarity | Bishop Shammah Womack-El";
@@ -85,33 +92,9 @@ onMount(async () => {
   const bgImage = "/a_woman_standing_on_a_mountain_top_with_raised_hands-1920x1152.jpg";
   const bishopPhoto = "/bishopphoto.png";
   const pageKeywords = "prophetic insight, wisdom-driven guidance, clear direction, discernment, Bishop Shammah Womack-El POW Prophet of Wellness, wellness, spiritual guidance, decision-making, clarity, wisdom, prophetic ministry, divine insight, real-world results";
-  // Great subtle options:
-  // Desert: https://images.unsplash.com/photo-1506905925346-21bda4d32df4
-  // Misty mountains: https://images.unsplash.com/photo-1506318137071-a8e063b4c8ed
-  // Night sky: https://images.unsplash.com/photo-1419242902214-272b3f66ee7a
 </script>
 
-<svelte:head>
-  <!-- Open Graph / Facebook / LinkedIn / Discord / Slack -->
-  <meta property="og:title" content={title} />
-  <meta property="og:description" content={description} />
-  <meta property="og:image" content={image} />
-  <meta property="og:url" content={pageUrl} />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_US" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={title} />
-  <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content={image} />
-  <meta name="twitter:url" content={pageUrl} />
-  <!-- Optional: Twitter creator -->
-  <meta name="twitter:creator" content="@YourTwitterHandle" />
-
-  <!-- Optional / Generic -->
-  <meta name="description" content={description} />
-</svelte:head>
 
 
 
