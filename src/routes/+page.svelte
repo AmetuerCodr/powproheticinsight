@@ -148,12 +148,21 @@ onMount(async () => {
   </h1>
 
   <!-- Supporting text -->
-  <p class="mt-4 sm:mt-10 renade-regular text-lg md:text-xl lg:text-2xl sm:max-w-xl max-w-lg mx-auto sm:mx-0
-            bg-linear-to-br from-white via-gray-100 to-white/70
-            bg-clip-text text-transparent
-            drop-shadow-[0_4px_15px_rgba(255,255,255,0.5)]">
-    Wisdom-driven prophetic guidance that provides clear direction, sharpens discernment in decisions, and positions you to move forward boldly and with confidence.
+<div class="mt-6 sm:mt-10 max-w-xl mx-auto sm:mx-0">
+  <p class="renade-regular text-xl md:text-2xl lg:text-3xl
+    bg-linear-to-br from-white via-gray-100 to-white/70
+    bg-clip-text text-transparent
+    drop-shadow-[0_4px_15px_rgba(255,255,255,0.5)]">
+    Wisdom-driven prophetic guidance
   </p>
+
+  <p class="mt-2 text-lg md:text-xl text-white/80 leading-snug">
+    for <span class="font-semibold text-white">clear direction</span>, 
+    <span class="font-semibold text-white">confident decisions</span>,  
+    and <span class="font-semibold text-white">bold forward movement</span>.
+  </p>
+</div>
+
 
   <!-- CTAs -->
   <div class="mt-9 sm:mt-10 flex flex-col sm:flex-row items-center sm:items-start gap-6">
