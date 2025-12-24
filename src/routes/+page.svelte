@@ -92,17 +92,11 @@ onMount(async () => {
   const pageUrl = `${baseUrl}${$page.url.pathname}`;
   const title = "Prophetic Insight that Brings Clarity | Bishop Shammah Womack-El";
   const description = "Bishop Shammah Womack-El provides prophetic insight that brings clarity and wisdom-driven guidance for clear direction and discernment in decisions.";
-  const image = `${baseUrl}/Prophetic-Insight.png`; // always absolute URL for social sharing
+  const image = `${baseUrl}/Prophetic-Insight.jpg`; // always absolute URL for social sharing
   const bgImage = "/a_woman_standing_on_a_mountain_top_with_raised_hands-1920x1152.jpg";
   const bishopPhoto = "/bishopphoto.png";
   const pageKeywords = "prophetic insight, wisdom-driven guidance, clear direction, discernment, Bishop Shammah Womack-El POW Prophet of Wellness, wellness, spiritual guidance, decision-making, clarity, wisdom, prophetic ministry, divine insight, real-world results";
 </script>
-
-
-
-
-
-
 
 <div class="prophetic-bg h-screen w-full relative overflow-hidden flex items-center">
 
@@ -118,12 +112,6 @@ onMount(async () => {
   <!-- 3. Soft horizon glow on top of the overlay -->
   <div class="absolute bottom-0 left-0 right-0 h-96 bg-linear-to-t from-amber-600/30 via-fuchsia-600/20 to-transparent blur-3xl"></div>
   <!-- 4. Rising embers (same as before) -->
-
-
-
-
-
-
 <div class="max-w-6xl relative z-10 mb-auto mt-10 sm:mt-14 mx-5 sm:ml-10 lg:ml-14 text-center sm:text-left">
 
   <!-- Headline -->
