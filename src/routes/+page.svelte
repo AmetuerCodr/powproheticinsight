@@ -1,15 +1,11 @@
 <script>
-   import 'plyr/dist/plyr.css';
-	import favicon from '$lib/assets/Prophetic-Insight.ico';
-   import { page } from '$app/stores';
+    import 'plyr/dist/plyr.css';
+    import favicon from '$lib/assets/Prophetic-Insight.ico';
+    import { page } from '$app/stores';
     import { onMount } from 'svelte';
     import {fade} from 'svelte/transition';
-    import {cubicOut} from 'svelte/easing';
     import { inview } from 'svelte-inview'
     import { browser } from '$app/environment';
-	import { goto } from '$app/navigation';
-
-
 
 export let data;
 
@@ -92,7 +88,7 @@ onMount(async () => {
   const pageUrl = `${baseUrl}${$page.url.pathname}`;
   const title = "Prophetic Insight that Brings Clarity | Bishop Shammah Womack-El";
   const description = "Bishop Shammah Womack-El provides prophetic insight that brings clarity and wisdom-driven guidance for clear direction and discernment in decisions.";
-  const image = `/Prophetic-Insight.jpg`; // always absolute URL for social sharing
+  const image = `/Prophetic-Insight.png`; // always absolute URL for social sharing
   const bgImage = "/a_woman_standing_on_a_mountain_top_with_raised_hands-1920x1152.jpg";
   const bishopPhoto = "/bishopphoto.png";
   const pageKeywords = "prophetic insight, wisdom-driven guidance, clear direction, discernment, Bishop Shammah Womack-El POW Prophet of Wellness, wellness, spiritual guidance, decision-making, clarity, wisdom, prophetic ministry, divine insight, real-world results";
@@ -322,9 +318,8 @@ bind:this={videoEl}
   preload="auto"
   class="shadow-xl"
 >
-
-  <source src="https://nyc.cloud.appwrite.io/v1/storage/buckets/694ae94e001383811353/files/694af23300020555b2c8/view?project=694ae93a003d9d879a41" type="application/x-mpegURL" />
-</video>
+  <source src="https://stream.mux.com/rx18HiL8wMOzWqJhoSGs100OIzOPuIxgXKTnJPDSEmkk.m3u8" type="application/x-mpegURL" />
+    </video> 
     </div>
   </div>
 
